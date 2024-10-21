@@ -62,7 +62,6 @@ func initConfig() {
 	viper.SetDefault("port", 9106)
 	viper.SetDefault("kube_env", "prod")
 	viper.SetDefault("verify_cn", true)
-	viper.SetDefault("refresh_interval", 30)
 
 	viper.AutomaticEnv()
 }
