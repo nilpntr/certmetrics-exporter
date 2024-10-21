@@ -33,6 +33,7 @@ jobs:
             @semantic-release/release-notes-generator
             @semantic-release/git
             @semantic-release/github
+            conventional-changelog-conventionalcommits
 
       - uses: int128/kaniko-action@v1
         with:
