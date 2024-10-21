@@ -43,6 +43,8 @@ jobs:
             sammobach/certmetrics-exporter:latest
           cache: true
           cache-repository: sammobach/certmetrics-exporter/cache
+          build-args: |
+            VERSION=${{ steps.release.outputs.new_release_version }}
 
       - name: Do something when a new release published
         if: steps.release.outputs.new_release_published == 'true'
