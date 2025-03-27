@@ -1,12 +1,13 @@
 module github.com/nilpntr/certmetrics-exporter
 
 go 1.23.2
+
 toolchain go1.24.1
 
 require (
 	github.com/prometheus/client_golang v1.21.1
 	github.com/spf13/cobra v1.9.1
-	github.com/spf13/viper v1.20.0
+	github.com/spf13/viper v1.20.1
 	go.uber.org/zap v1.27.0
 	k8s.io/api v0.32.3
 	k8s.io/apimachinery v0.32.3
